@@ -1,0 +1,33 @@
+{
+  "name": "phystimer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder -wl --x64 --publish never"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+        "electron-builder": "22.9.1",
+    "electron": "^12.0.1"
+  },
+   "build": {
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "asar": true,
+    "asarUnpack": [
+      "assets"
+      
+    ]},
+    
+
+    "portable": {
+      "artifactName": "timer.exe"
+    }
+    
+  }
+}

@@ -1,0 +1,625 @@
+<html>
+
+<head>
+    <style>
+        @font-face {
+            font-family: JuneBug;
+            src: url('iosevka-ss09-extralight.ttf');
+        }
+
+        @font-face {
+            font-family: JuneBug2;
+            src: url('Monoid-Regular.ttf');
+        }
+
+        @font-face {
+            font-family: JuneBug3;
+            src: url('Envy Code R.ttf');
+        }
+
+        body {
+            font-family: "Roboto Condensed", sans-serif;
+        }
+
+        @font-face {
+            font-family: JuneBug4;
+            src: url('good_times_rg.ttf');
+        }
+
+        @font-face {
+            font-family: JuneBug5;
+            src: url('URWGothic-Book.otf');
+        }
+
+        @font-face {
+            font-family: JuneBug6;
+            src: url('JovannyLemonad-Bender.otf');
+        }
+
+        .attentionGrabber1 {
+            right: 100vw;
+            animation-fill-mode: forwards;
+            animation-name: attentionGrabber1;
+            animation-duration: 0.9s;
+            animation-iteration-count: 1;
+            animation-delay: 0s;
+            width: 100vw;
+        }
+
+        @keyframes attentionGrabber1 {
+
+            0% {
+                background: red;
+                width: 100vw;
+                right: 100vw;
+            }
+
+            50% {
+                background: red;
+                width: 100vw;
+                right: 0vw;
+            }
+
+            100% {
+                width: 0vw;
+                right: 0vw;
+            }
+        }
+
+
+
+        .logMasker {
+            position:absolute;
+            animation-fill-mode: forwards;
+            animation-name: logMasker;
+            animation-duration: 0.9s;
+            animation-iteration-count: 1;
+            animation-delay: 8s;
+            border-radius:50%;
+
+        }
+
+        @keyframes logMasker {
+
+            0% {
+                height:0;
+                width:0;
+                background:rgba(255, 255, 255, 1);
+            }
+
+
+            100% {
+                width: 400%;
+                height: 400%;
+                background:rgba(255, 255, 255, 0);
+            }
+        }
+
+
+
+
+
+
+
+
+
+        .attentionGrabber2 {
+            right: 100vw;
+            animation-fill-mode: forwards;
+            animation-name: attentionGrabber2;
+            animation-duration: 0.9s;
+            animation-iteration-count: 1;
+            animation-delay: 0.5s;
+            width: 100vw;
+        }
+
+        @keyframes attentionGrabber2 {
+
+            0% {
+                background: black;
+                width: 100vw;
+                right: 100vw;
+            }
+
+            50% {
+                background: black;
+                width: 100vw;
+                right: 0vw;
+            }
+
+            100% {
+                width: 0vw;
+                right: 0vw;
+            }
+        }
+
+        .breakingNews {
+            background: rgba(16, 16, 16, 0);
+            animation-fill-mode: forwards;
+            animation-name: breakingNews;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 0s;
+        }
+
+        @keyframes breakingNews {
+
+            0% {
+                background: rgba(16, 16, 16, 0);
+                backdrop-filter: blur(0px);
+            }
+
+
+
+            25% {
+                background: rgba(16, 16, 16, 0.91);
+                backdrop-filter: blur(3px);
+            }
+
+            95% {
+                background: rgba(16, 16, 16, 0.91);
+                backdrop-filter: blur(3px);
+            }
+
+            100% {
+                background: rgba(16, 16, 16, 0);
+                backdrop-filter: blur(0px);
+            }
+        }
+
+        .breakNewsLabelbg {
+            left: -105%;
+            animation-fill-mode: forwards;
+            animation-name: breakNewsLabelbg;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 0s;
+            animation-timing-function: cubic-bezier(0.95, 0, 0.24, 0.88);
+        }
+
+        @keyframes breakNewsLabelbg {
+
+            0% {
+
+                width: 100vw;
+                left: -105%;
+            }
+
+            25% {
+
+                width: 100vw;
+                left: 5%;
+            }
+
+            75% {
+
+                width: 100vw;
+                left: 5%;
+            }
+
+            100% {
+                width: 100vw;
+                left: 105%;
+            }
+        }
+
+        .timeStartPre {
+            left: 1%;
+            opacity: 1;
+        }
+
+        .timeEndPre {
+            left: 0%;
+            opacity: 1;
+        }
+
+        .timeStartpost {
+            left: 1%;
+            top: 0%;
+            animation-fill-mode: forwards;
+            animation-name: timeStartpost;
+            animation-duration: 0.7s;
+            animation-iteration-count: 1;
+            animation-delay: 9s;
+            animation-timing-function: cubic-bezier(0.95, 0, 0.24, 0.88);
+            opacity: 1;
+        }
+
+        @keyframes timeStartpost {
+
+            0% {
+                top: 0%;
+                opacity: 1;
+            }
+
+
+
+            100% {
+                opacity: 0;
+                top: -5%;
+            }
+        }
+
+        .timeEndpost {
+            left: 0%;
+
+            animation-fill-mode: forwards;
+            animation-name: timeEndpost;
+            animation-duration: 0.7s;
+            animation-iteration-count: 1;
+            animation-delay: 10s;
+            animation-timing-function: cubic-bezier(0.95, 0, 0.24, 0.88);
+            opacity: 1;
+        }
+
+        @keyframes timeEndpost {
+
+            0% {
+                left: 0%;
+
+            }
+
+
+
+            100% {
+
+                left: -60%;
+            }
+        }
+
+
+
+        .breakNewsLabel {
+            top: 50%;
+            animation-fill-mode: forwards;
+            animation-name: breakNewsLabel;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 0s;
+            animation-timing-function: cubic-bezier(0.95, 0, 0.24, 0.88);
+        }
+
+        @keyframes breakNewsLabel {
+
+            0% {
+
+                top: 50%;
+                opacity: 0;
+            }
+
+            25% {
+
+                top: 50%;
+                opacity: 1;
+            }
+
+            75% {
+
+                top: 50%;
+                opacity: 1;
+            }
+
+            85% {
+                top: 30%;
+                opacity: 0;
+            }
+
+            100% {
+                top: 30%;
+                opacity: 0;
+            }
+        }
+
+        .locationdirpre {
+            top: 76%;
+            left: 20%;
+        }
+
+        .locationdirpost {
+            top: 76%;
+            left: 20%;
+            animation-fill-mode: forwards;
+            animation-name: locationdirpost;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-delay: 10s;
+            animation-timing-function: cubic-bezier(0.95, 0, 0.24, 0.88);
+        }
+
+        @keyframes locationdirpost {
+
+            0% {
+                left: 20%;
+                opacity: 1;
+            }
+
+
+
+            100% {
+                left: 0%;
+                opacity: 0;
+            }
+        }
+
+        .dirpre {
+            top: 86vh;
+        }
+
+        .dirpost {
+            
+                top: 86vh;
+            animation-fill-mode: forwards;
+            animation-name: dirpost;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-delay: 10s;
+            animation-timing-function: cubic-bezier(0.95, 0, 0.24, 0.88);
+        }
+
+        @keyframes dirpost {
+
+            0% {
+                top: 86vh;
+            }
+
+
+
+            100% {
+                top: 76%;
+                opacity: 1;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body style="overflow:hidden;" onmousemove="document.getElementById('dir').className='dirpre'
+document.getElementById('locationdir').className='locationdirpre'">
+    <div class="init" style="position:absolute;width:100%;height: 100%;">
+        <div style="position:absolute;top: 28%;left:20%;font-size:6vh;font-family: Junebug5;height:50%;width: 63%;">
+            PHYSICS II
+
+            <div id='drname' style="position:absolute;top: 17%;left: 0%;font-size: 2vh;" onclick='getDrName()'>
+
+                <span
+                    style="color:white;background: #00000075;padding:3px;margin:2px;font-family:JuneBug;font-weight:900;">INSTRUCTOR</span>Dr.
+                Who
+            </div>
+            <textarea id='drinput' onblur="disabledrname()" style='display:none'></textarea>
+            <div id='facilist' onclick='enablefacitarea()'
+                style="position:absolute;top: 5%;left: 31%;font-size: 1.4vh;">
+
+                <div
+                    style="color:white;background: #00000075;padding: 2px;margin: 0vh;font-family:JuneBug;font-weight:900;margin-bottom: 1.9vh;font-size: 2vh;">
+                    Facilitators</div>
+                <div style="margin-top: -0.5vh;">classmate A</div>
+                <div style="margin-top: -0.5vh;">classmate B</div>
+                <div style="margin-top: -0.5vh;">classmate C</div>
+            </div>
+
+            <textarea id='facitarea' style='display:none' onblur="disablefacitarea()">
+                classmate A\n
+                classmate b\n
+                classmate c\n
+            </textarea>
+
+
+
+            <div id="options" style="position:absolute;top: -1vh;left: 50vw;/* width: 4vw; */">
+                <p style="opacity:0.2;font-size: 2vh;margin:0;">Options</p>
+
+                <span onclick="engageTimer()" style="margin:0;/* margin-right:4vw; */font-size: 4vh;">01</span><span
+                    onclick="engageTimer()" style="font-size: 1vh;/* width: 3vh; */"> Engage <br>Timer<br></span>
+
+                <span onclick="forceStart()" style="margin:0;/* margin-right:4vw; */font-size: 4vh;">02</span><span
+                    onclick="forceStart()" style="font-size: 1vh;/* width: 3vh; */"> Test <br>Begin<br></span>
+
+                <span style="margin:0;/* margin-right:4vw; */font-size: 4vh;" onclick="timesUp()">03</span><span
+                    onclick="timesUp()" style="font-size: 1vh;">
+                    Test<br> End</span>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div style="position:absolute;top: 50%;/* left: 41%; */width: 48%;height:50%;left: 20%;">
+            <div style="background:black;width: 82%;height: 2px;top: -2.1vh;position:absolute;"></div>
+            <div style="position:absolute;left: 0vw;height: 37%;width: 25%;">
+                <div style="position:absolute;font-weight:900;font-size:4vh;color:grey;left: 0vw;" id="properTime">
+                    0<br>39</div>
+                <div style="background: grey;width: 16.7%;height:2px;top: 12.9vh;position:absolute;right: 10vw;"></div>
+                <div
+                    style="position:absolute;font-weight:900;font-size:4vh;color:grey;left: 3vw;width: 100%;height:100%;">
+                    Time<br><span style="color:black;">Current</span>
+                    <div id="preStartProgress"
+                        style="background:black;width:100%;height:2px;top: 12.9vh;position:absolute;"></div>
+                </div>
+            </div>
+
+            <div style="position:absolute;left: 15vw;height:50%;width:50%;">
+
+
+
+                <div class='timeEndPre' id='timeEnd' style="position:absolute;height:100%;width:20%;">
+                    <div id="endTime" onclick="setEndTime()"
+                        style="position:absolute;font-weight:900;font-size:4vh;color:grey;left: 16vw;">17<br>08<br>
+                    </div>
+
+                    <input type="number" id="endTimeTarea"
+                        style="position:absolute;font-weight:900;font-size:4vh;color:grey;left: 19vw;width: 10vw;height: 5vh;display:none"
+                        onblur="disableeTimeTarea()" value="1708">
+
+                    <div id="eTimeLabel" onclick="setEndTime()"
+                        style="position:absolute;font-weight:900;font-size:4vh;color:grey;left: 19vw;">Test<br><span
+                            style="color:black;">Ends</span>
+
+                    </div>
+
+
+                </div>
+
+                <div class='timeStartPre' id='timeStart' style="position:absolute;height:100%;width:20%;">
+                    <div id="beginTime" onclick="setBeginTime()"
+                        style="position:absolute;font-weight:900;font-size:4vh;color:grey;left: 0vw;">0<br>11<br></div>
+                    <input type="number" id="beginTimeTarea"
+                        style="position:absolute;font-weight:900;font-size:4vh;color:grey;left: 3vw;width: 10vw;height: 5vh;display:none"
+                        onblur="disablebTimeTarea()" value="1705">
+
+                    <div id="bTimeLabel" style="position:absolute;font-weight:900;font-size:4vh;color:grey;left: 3vw;"
+                        onclick="setBeginTime()">Test<br><span style="color:black;">Begins</span>
+
+                    </div>
+                </div>
+
+                <div id='postStartProgress'
+                    style="background:black;width: 89%;height: 2px;top: 12.9vh;position:absolute;"></div>
+                <div style="background: grey;width: 10%;height:2px;top: 12.9vh;position:absolute;right:0;">
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class='dirpre' id='dir' style="position:absolute;top: 95%;left: 20%;height:20%;width:20%;opacity: 0.05;">
+            <div
+                style="padding: 0vw;position:absolute;background:black;color:white;padding-left: 4vw;padding-top: 4vh;font-weight:900;font-size: 2.8vw;">
+                DIRECTIONS</div>
+            <div style="position:absolute;left: 23vw;height:4vw;top: 0vh;width: 11vw;font-size:1vw;" id="textdoneList"
+                onclick="enableTextAreadoneList()">
+                <div style="background: #ff0000;color:white;opacity:0.5;">PENS DOWN</div>
+                The test has ended <br>
+                Please check the name, rin and hand in your bubblesheet<br>
+                You may keep your exam paper<br>
+                Please walk up to your respective sections in the front<br>
+
+
+            </div>
+
+
+        </div>
+        <textarea id="textAreadoneListTarea"
+            style="position: absolute; left: 41vw; height: 128px; margin: 0px; width: 642px;display:none;"
+            onblur="disableTextAreadoneList()">                [PENS DOWN]
+            The test has ended  \n
+            Please check the name, rin and hand in your bubblesheet\n
+            You may keep your exam paper\n
+            Please walk up to your respective sections in the front\n
+        
+        
+        </textarea>
+        <div style="position:absolute;height:20%;width:20%;" id='locationdir' class='locationdirpre'>
+            <div
+                style="padding: 0vw;position:absolute;background:black;color:white;padding-left: 4vw;padding-top: 4vh;font-weight:900;font-size: 2.8vw;">
+                LOCATION</div>
+            <div style="position:absolute;left: 19vw;height:4vw;top: 0vh;width: 11vw;font-size:1vw;"
+                id="textAreaCheckList" onclick="enableTextAreaCheckList()">
+                <div style="background: #ff0000;color:white;opacity:0.5;">Auditorium</div>
+                Check calcuators <br>
+                Pencils for bubblesheet<br>
+                Erasers<br>
+                Cheatsheet<br>
+
+
+            </div>
+            <textarea id="textAreaCheckListTarea"
+                style="position: absolute; left: 18vw; height: 4vw; top: -1vh; display: none;"
+                onblur="disableTextAreaCheckList()">                [Auditorium]
+Check calcuators \n   
+Pencils for bubblesheet\n
+Erasers\n
+Cheatsheet\n
+            
+            
+            </textarea>
+
+        </div>
+        <div style="position:absolute;top: 76%;left: 55%;height:20%;width:20%;">
+            <div
+                style="padding: 0vw;position:absolute;background:black;color:white;padding-left: 4vw;padding-top: 4vh;font-weight:900;font-size: 2.8vw;left:1vw;">
+                NOTICE</div>
+            <div id="textAreaAnnouncement"
+                style="font-size:1vw;position:absolute;left: 16vw;height:4vw;top: 0vh;width: 12vw;"
+                onclick="enableTextAreaAnnouncement()">
+                <div style="background:red;color:white;opacity:0.5">Question 4</div>
+                The answer is B <br>
+                <div style="background:red;color:white;opacity:0.5">Question 5</div>
+                The answer is one of the A, B or C <br>
+
+            </div>
+            <textarea onblur="disableTextAreaAnnouncement()" id="textAreaAnnouncementTarea"
+                style="position: absolute; left: 24vw; height: 4vw; top: -1vh; display: none;">                [Question 4]
+The answer is B \n
+[Question 5]
+The answer is one of the A, B or C \n
+            
+            </textarea>
+        </div>
+
+
+    </div>
+    <div class="log"
+        style="pointer-events:none;position:absolute;/* background:red; */perspective: 21px;height:100%;width: 11vw;right: 7%;">
+        <div class="actualLog"
+            style="height: 99.3%;width: 143%;position:absolute;transform: rotateX(0deg) rotateY(-0.3deg) translateX(-146px);top: 0vh;left: 9vw;/* background:red; */">
+            <p style="width:100%;text-align:right;font-family: 'JuneBug';font-size: 2vh;margin:0;">LOGS</p>
+            <img src="line1.png" style="position:relative;width: 100%;height: 1vh;">
+            <div id='logWrapper' style="width:100%;left:0;height: 95vh;top: 4vh;position:absolute;">
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="attentionGrabber" class="attentionGrabber"
+        style="position: absolute; top: -1vh; height: 110vh; width: 100%; display: none;">
+        <div class="attentionGrabber1" style="position:absolute;top:-1vh;height:110vh;"></div>
+        <div class="attentionGrabber2" style="position:absolute;top:-1vh;height:110vh;"></div>
+    </div>
+
+    <div class="breakingNews" id="breakingNews"
+        style="height: 110%; width: 110%; top: -2%; left: -5%; position: absolute; display: none;">
+        <div class="breakNewsLabelbg" id="breakNewsLabelbg"
+            style="position:absolute;width:100%;top:40%;width: 89%;background: #6b6b6beb;height:20%;filter: drop-shadow(9px 14px 10px black);">
+        </div>
+
+        <div class="breakNewsLabel" id="breakNewsLabel"
+            style="font-size: 8vh;color:white;font-weight:900;position:absolute;right: 7%;font-family: 'JuneBug';">THE
+            TEST HAS ENDED</div>
+
+    </div>
+
+
+
+    <script src="timer.js"></script>
+    <script src="inputdealer.js"> </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
