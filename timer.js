@@ -52,12 +52,14 @@ function forceStart() {
     document.getElementById('beginTime').innerHTML = crhour + '<br>' + crminute + '<br>'
     window.isStarted = true
     startAlert()
+    window.isEngaged=true
     setTimeout(function () { pushbreakingNews('TEST START') }, 3000)
 
 }
 
 function timesUp() {
     window.isStarted = false
+    window.isEngaged=false
     startAlert()
     setTimeout(pushbreakingNews, 3000)
     document.getElementById('timeStart').className = 'timeStartPre'
@@ -79,7 +81,7 @@ function pushbreakingNews(news = 'THE TEST HAS ENDED') {
 
     setTimeout(function () { document.getElementById('breakingNews').style.display = 'none' }, 6500)
     let time = window.crhour + ':' + window.crminute
-    let temp = '<div class="smolNotifLog" style="background: rgb(161 161 161 / 64%);width:100%;height: 57px;position:relative;margin-top:14px;backdrop-filter: blur(2px);filter: drop-shadow(14px 10px 5px rgba(0,0,0,0.3));overflow:hidden;">\
+    let temp = '<div class="smolNotifLog" style="opacity:0.6;background: rgb(161 161 161 / 64%);width:100%;height: 57px;position:relative;margin-top:14px;backdrop-filter: blur(2px);filter: drop-shadow(14px 10px 5px rgba(0,0,0,0.3));overflow:hidden;">\
     <div style="position:absolute;height:100%;width: 17%;background: #ff000030;">\
         <h1 style="width:100%;text-align:right;margin:0;font-size: 40px;position:absolute;top: 11px;color: white;font-family:JuneBug2;">\
             i</h1>\
